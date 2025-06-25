@@ -1,75 +1,71 @@
+/* Base styles */
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
-  background: #fff9f5;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f6f8fa;
   color: #333;
+  line-height: 1.6;
 }
 
+/* Header + Nav */
 header {
-  background: #f7c1b8;
-  padding: 1rem;
+  background-color: #20232a;
+  color: white;
+  padding: 1rem 0;
   text-align: center;
 }
 
-header h1 {
-  margin: 0;
-  font-size: 2rem;
+nav {
+  background-color: #20232a;
+  text-align: center;
+  padding: 0.5rem 0;
 }
 
 nav a {
-  margin: 0 10px;
+  color: white;
   text-decoration: none;
-  color: #5c2b29;
+  margin: 0 15px;
   font-weight: bold;
 }
 
-.grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  padding: 1rem;
-  justify-content: center;
+nav a:hover {
+  text-decoration: underline;
 }
 
+/* Main layout */
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem 2rem;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Headings */
+h1, h2, h3 {
+  color: #20232a;
+}
+
+/* Recipe cards on homepage */
 .card {
-  background: white;
-  border-radius: 10px;
+  background: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1.5rem 0;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  width: 300px;
-  overflow: hidden;
+  transition: transform 0.2s ease;
 }
 
-.card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
+.card:hover {
+  transform: translateY(-5px);
 }
 
-.card h2 {
-  margin: 0.5rem;
-  font-size: 1.25rem;
-}
-
-.card p {
-  margin: 0.5rem;
-}
-
-.card a {
-  display: block;
-  margin: 0.5rem;
-  color: #cc4c3f;
-  text-decoration: none;
-  font-weight: bold;
-}
-
+/* Footer */
 footer {
   text-align: center;
-  padding: 1rem;
-  background: #f7c1b8;
-}
-
-form {
-  max-width: 400px;
-  margin: auto;
-  padding: 1rem;
+  padding: 1rem 0;
+  background-color: #20232a;
+  color: white;
+  margin-top: 2rem;
 }
